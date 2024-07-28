@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { HStack, Box, Text, Heading, List, ListItem, ListIcon, Divider, Image, VStack, Link, Button, Flex, Collapse } from "@chakra-ui/react";
 import { CheckCircleIcon, ChevronRightIcon, ArrowForwardIcon, ArrowBackIcon } from "@chakra-ui/icons";
-import photo4 from '../images/photo4.jpg'; // Replace this with the actual image path
+
 
 const KeyResponsibilities = () => (
   <>
@@ -102,7 +102,7 @@ export default function UnrealEngineToolkitBuilder() {
           <HStack align="start">
             <VStack w="45%">
               <Link href="https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Developer/WidgetRegistration/FToolkitBuilder" isExternal>
-                <Image src={photo4} alt="Unreal Engine Toolkit Builder" borderRadius="lg" />
+                <Image src={`${process.env.PUBLIC_URL}/images/photo4.jpg`}alt="Unreal Engine Toolkit Builder" borderRadius="lg" />
               </Link>
             </VStack>
             <VStack w="55%" pl={4} align="start">

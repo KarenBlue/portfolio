@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { HStack, Box, Text, Heading, List, ListItem, ListIcon, Divider, Image, VStack, Link, Button, Flex, Collapse } from "@chakra-ui/react";
 import { CheckCircleIcon, ChevronRightIcon, ArrowForwardIcon, ArrowBackIcon } from "@chakra-ui/icons";
-import photo2 from '../images/photo2.jpg';
+
 
 const KeyResponsibilities = () => (
   <>
@@ -102,7 +102,7 @@ export default function SasWorkflow() {
           <HStack align="start">
             <VStack w="45%">
               <Link href="https://support.sas.com/resources/papers/proceedings17/SAS0524-2017.pdf" isExternal>
-                <Image src={photo2} alt="SAS Workflow" borderRadius="lg" />
+                <Image src={`${process.env.PUBLIC_URL}/images/photo2.jpg`} alt="SAS Workflow" borderRadius="lg" />
               </Link>
             </VStack>
             <VStack w="55%" pl={4} align="start">

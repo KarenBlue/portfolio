@@ -1,7 +1,6 @@
 import { useState, useEffect,useRef } from 'react';
 import { HStack, Box, Text, Heading, List, ListItem, ListIcon, Divider, Image, VStack, Link, Button, Flex, Collapse } from "@chakra-ui/react";
 import { CheckCircleIcon, ChevronRightIcon, ArrowForwardIcon, ArrowBackIcon } from "@chakra-ui/icons";
-import photo1 from '../images/photo1.jpg';
 
 const KeyResponsibilities = () => (
   <>
@@ -160,7 +159,7 @@ export default function SasVi() {
           <HStack align="start">
             <VStack w="45%">
               <Link href="https://www.sas.com/en_us/software/intelligence-analytics-visual-investigator.html" isExternal>
-                <Image src={photo1} alt="SAS Visual Investigator" borderRadius="lg" />
+                <Image src={`${process.env.PUBLIC_URL}/images/photo1.jpg`} alt="SAS Visual Investigator" borderRadius="lg" />
               </Link>
             </VStack>
             <VStack w="55%" pl={4} align="start">
