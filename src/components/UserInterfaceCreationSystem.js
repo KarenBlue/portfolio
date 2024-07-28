@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { HStack, Box, Text, Heading, List, ListItem, ListIcon, Divider, Image, VStack, Link, Button, Flex, Collapse } from "@chakra-ui/react";
 import { CheckCircleIcon, ChevronRightIcon, ArrowForwardIcon, ArrowBackIcon } from "@chakra-ui/icons";
-import photo3 from '../images/photo3.jpg'; // Replace this with the actual image path
+
 
 const KeyResponsibilities = () => (
   <>
@@ -73,7 +73,8 @@ const DetailsSection = ({ showMore, detailsRef }) => (
       <TechnologiesUsed />
       <Divider my={3} />
       <Text fontSize="sm">
-      Leading the creation of the User Interface Creation System allowed me to showcase my skills in architectural design and cross-technology adaptability. The system’s ability to facilitate swift transitions between different UI frameworks is a testament to my innovative approach and technical proficiency. This project, which underpins my patent, exemplifies my dedication to delivering scalable and efficient UI solutions.</Text>
+      Leading the creation of the User Interface Creation System allowed me to showcase my skills in architectural design and cross-technology adaptability. The system’s ability to facilitate swift transitions between different UI frameworks is a testament to my innovative approach and technical proficiency. This project, which underpins my patent, exemplifies my dedication to delivering scalable and efficient UI solutions.
+      </Text>
     </Box>
   </Collapse>
 );
@@ -102,7 +103,7 @@ export default function UserInterfaceCreationSystem() {
           <HStack align="start">
             <VStack w="45%">
               <Link href="https://patents.google.com/patent/US11537366B1/en" isExternal>
-                <Image src={photo3} alt="User Interface Creation System" borderRadius="lg" />
+                <Image src={`${process.env.PUBLIC_URL}/images/photo1.jpg`}alt="User Interface Creation System" borderRadius="lg" />
               </Link>
             </VStack>
             <VStack w="55%" pl={4} align="start">
