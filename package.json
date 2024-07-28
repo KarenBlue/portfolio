@@ -2,6 +2,7 @@
   "name": "graded-assessment",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://karenblue.github.io/portfolio",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@chakra-ui/icons": "^2.1.1",
